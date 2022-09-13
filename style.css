@@ -1,96 +1,184 @@
 * { 
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
-}
+    margin: 0;}
 
-body {
-    background-color:  #d9dcd6;
+body{
+    background-color: rgb(23, 23, 36);
 }
 
 .header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: black;
-    color: whitesmoke;
+    color: aliceblue;
+    font-family: "Sofia", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
     
+   
 }
-
 .header h1 {
     display: inline-block;
     font-size: 48px;
-}
+padding-bottom: 3px;}
 
 .header nav {
-    padding-top: 15px;
+    padding-top: 30px;
     margin-right: 20px;
     float: right;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    font-family: "Sofia", sans-serif;  
     font-size: 23px;
     font-weight: bold;
-    
+    Transition: color 1s, opacity 1s
 }
 
-.header nav ul {
+.header ul {
     list-style-type: none;
-    
 }
+
 .header nav ul li {
     display: inline-block;
     margin-left: 27px;
+   
 }
 a:link {
-    color: whitesmoke;
+    color:white;
+    Transition: color 1s, opacity 1s; 
 }
 a:visited {
     color: rgb(80, 80, 215);
 }
-body, html {
-    height: 100%;
-}
 
-/* The hero image */
-.hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("background-\ sea.JPG");
+.sea-image {
+   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("backgroundsea.JPG");
 
   /* Set a specific height */
-  height: 50%;
-
+  height: 500px;
+ 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  position:relative;
 }
+.sea-image p {
+    font-size: 45px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:bold ;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
 
-/* Place text in the middle of the image */
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-.content {
+  .main { 
     display: block;
-}
-.Aboutme {
-    display: flex;
-    margin-left: 100px;
+  }
+
+  .about-me h1 {
+    font-size: 48px;
+    font-weight: bold;
+    font-family:"Sofia", sans-serif ;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align:center;
+    color: cornflowerblue;}
+
+@keyframes animated-border {
+        0% {
+          box-shadow: 0 0 0 0 rgba(255,255,255,0.4);
+        }
+        100% {
+           box-shadow: 0 0 0 20px rgba(255,255,255,0);
+        }
+      }
+      .about-me ul li {
+        text-align: center;
+        animation: animated-border 1.5s infinite;
+        margin-top: 29px;
+        font-family: Arial;
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        color: white;
+        border: 2px solid;
+        border-radius: 10px;
+        padding: 15px 20px;
+        list-style: none;
+      }
+      
+      .about-me  {
+        display: block;
+        font-size: 40px;
+    }
+    .work h1 {
+        font-size: 48px;
+        font-weight: bold;
+        font-family:"Sofia", sans-serif ;
+        font-weight: bold;
+        margin-top: 20px;
+        text-align:center;
+        color: cornflowerblue;}
+
+        .project1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align:center;
+        
+          }
+          
+          .project1 h1 {
+            width: 620px;
+            height: 200px;
+            margin-bottom: 2%;
+            margin-left: 420px;
+            animation: animated-border 1.5s infinite;
+             margin-top: 29px;
+            font-family: Arial;
+            font-size: 50px;
+            Text-decoration: underline;
+            line-height: 30px;
+            font-weight: bold;
+            color: white;
+            border: 2px solid;
+            border-radius: 30px;
+            padding: 80px 100px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR12EdoCy2hl0Uhb1fHxRfAL-VKWDvdzmFupg&usqp=CAU);
+          }
+          
+          .project2 {
+            width: 13px;
+            height: 55px;
+            margin-bottom: 2%;
+            margin-right: 90px;
+            animation: animated-border 1.5s infinite;
+             margin-top: 29px;
+            border: 2px solid;
+            border-radius: 30px;
+            padding: 70px 168px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0SFmQ5RlSTF_1L1cfHxc0n7lQ-hr_YIklzA&usqp=CAU);
+           
+          }
+          .project3{
+          width: 13px;
+          height: 55px;
+          margin-bottom: 2%;
+          margin-left: 460px;
+          animation: animated-border 1.5s infinite;
+           margin-top: 29px;
+          font-family: Arial;
+          font-size: 50px;
+          Text-decoration: underline;
+          line-height: 30px;
+          font-weight: bold;
+          color: white;
+          border: 2px solid;
+          border-radius: 30px;
+          padding: 70px 115px;
+          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjO-9By35FgZA2VJB2huEBLd-q8XsgSgJopw&usqp=CAU);}
     
-}
-.Aboutme ul {
-    margin-left: 50px;
-    
-}
-.vertical-line {
-    border-left: 5px solid black;
-    position: static;
-    display: block;
-    height: 100px;
-    margin-left: 10px;
-    width: 1px;
-    ;
-}
+
+   
