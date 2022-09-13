@@ -76,8 +76,18 @@ a:visited {
   .main { 
     display: block;
   }
-
-  .about-me h1 {
+  img {
+    border: 3px solid cornflowerblue;
+    background-color: cornflowerblue;
+    color: cornflowerblue;
+    animation: animated-border 1.5s infinite;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    margin-left: 645px
+    ;
+  }
+.about-me h1 {
     font-size: 48px;
     font-weight: bold;
     font-family:"Sofia", sans-serif ;
@@ -85,6 +95,7 @@ a:visited {
     margin-top: 20px;
     text-align:center;
     color: cornflowerblue;}
+
 
 @keyframes animated-border {
         0% {
@@ -153,12 +164,12 @@ a:visited {
             width: 13px;
             height: 55px;
             margin-bottom: 2%;
-            margin-right: 90px;
+            margin-left: 560px;
             animation: animated-border 1.5s infinite;
              margin-top: 29px;
             border: 2px solid;
             border-radius: 30px;
-            padding: 70px 168px;
+            padding: 80px 150px;
             background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0SFmQ5RlSTF_1L1cfHxc0n7lQ-hr_YIklzA&usqp=CAU);
            
           }
@@ -166,7 +177,7 @@ a:visited {
           width: 13px;
           height: 55px;
           margin-bottom: 2%;
-          margin-left: 460px;
+          margin-left: 560px;
           animation: animated-border 1.5s infinite;
            margin-top: 29px;
           font-family: Arial;
@@ -177,8 +188,47 @@ a:visited {
           color: white;
           border: 2px solid;
           border-radius: 30px;
-          padding: 70px 115px;
+          padding: 80px 150px;
           background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjO-9By35FgZA2VJB2huEBLd-q8XsgSgJopw&usqp=CAU);}
     
+.contactme h1{
+  font-size: 48px;
+  font-weight: bold;
+  font-family:"Sofia", sans-serif ;
+  font-weight: bold;
+  margin-top: 60px;
+  text-align:center;
+  color: cornflowerblue;
+}
+.contactme h2 {
+  text-align: center;
+  animation: animated-border 1.5s infinite;
+  margin-top: 29px;
+  font-family: Arial;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  color: white;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 15px 20px
+}
+.footer {
+  padding: 30px;
+  clear: both;
+  font-family:"Sofia", sans-serif;
+  text-align: center;
+}
+@media (max-width:960px){
+  body{
+    color:#f6adc6 ;
+    background-color: #87cefa ;
+  }
+  .about-me ul li {
+    color: #f6adc6;
+  }
+}
 
+  
+}
    
